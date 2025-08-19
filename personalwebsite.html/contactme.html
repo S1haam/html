@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact us</h1>
+</body>
+</html>
+<!--
+-->
+<div class="container">
+    <h2>Developer Registration</h2>
+    <form action="/register" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+  
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="skills">Primary Skills (comma-separated)</label>
+      <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Python, HTML">
+  
+      <label>Experience Level</label>
+      <select id="experience" name="experience" required>
+        <option value="">-- Select --</option>
+        <option value="junior">Junior</option>
+        <option value="mid">Mid-Level</option>
+        <option value="senior">Senior</option>
+      </select>
+  
+      <label>Availability</label>
+      <div class="radio-group">
+        <input type="radio" id="fulltime" name="availability" value="Full-time" required>
+        <label for="fulltime">Full-time</label><br>
+        <input type="radio" id="parttime" name="availability" value="Part-time">
+        <label for="parttime">Part-time</label><br>
+        <input type="radio" id="freelance" name="availability" value="Freelance">
+        <label for="freelance">Freelance</label>
+      </div>
+  
+      <label>Technologies You Know</label>
+      <div class="checkbox-group">
+        <input type="checkbox" id="html" name="technologies[]" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="technologies[]" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="technologies[]" value="JavaScript">
+        <label for="js">JavaScript</label><br>
+        <input type="checkbox" id="python" name="technologies[]" value="Python">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="java" name="technologies[]" value="Java">
+        <label for="java">Java</label>
+      </div>
+  
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+  
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
